@@ -1,0 +1,93 @@
+***************************One class implementing three interfaces*****************************
+
+interface Sturoll
+{
+	void rollno();
+}
+
+interface Stuname extends Sturoll
+{
+	void name();
+}
+
+interface Stubranch extends Sturoll
+{
+	void branch();
+}
+
+class Student implements Stuname
+{
+	public void rollno()
+	{
+		System.out.println("1234");
+	}
+
+
+  public void name()
+  {
+    System.out.println("abc");
+  }
+
+  public void branch()
+  {
+    System.out.println("cse");
+  }
+
+  public static void main(String[] args)
+  {
+    Student s= new Student();
+    System.out.println("rollno:");
+    s.rollno();
+    System.out.println("name:");
+    s.name();
+    System.out.println("branch:");
+    s.branch();
+  }
+}
+
+
+***************************Two classes implementing one interface*****************************
+
+interface Sturoll
+{
+	void rollno();
+	void name();
+}
+
+class Student1 implements Sturoll
+{
+	public void rollno()
+	{
+		System.out.println("111");
+	}
+	public void name()
+	{
+		System.out.println("aaa");
+	}
+}
+
+class Student2 implements Sturoll
+{
+	public void rollno()
+	{
+		System.out.println("222");
+	}
+	public void name()
+	{
+		System.out.println("bbb");
+	}
+
+	public static void main(String[] args)
+	{
+		Student1 s= new Student1();
+		System.out.println("rollno:");
+		s.rollno();
+		System.out.println("name");
+		s.name();
+		Student2 t= new Student2();
+		System.out.println("rollno:");
+		t.rollno();
+		System.out.println("name");
+		t.name();
+	}
+}
