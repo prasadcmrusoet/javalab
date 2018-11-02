@@ -1,0 +1,73 @@
+*********************************Name and age***************************************
+
+import java.util.*;
+class Customexception extends Exception
+{
+Customexception()
+{
+System.out.println("There is an error");
+}
+}
+public class demo
+{
+public static void main(String args[])
+{
+Scanner b=new Scanner(System.in);
+System.out.println("Enter the age");
+String a=b.next();
+System.out.println("Enter the name");
+String d=b.next();
+try
+{
+if(a.equals ("21") && d.equals ("varsha"))
+System.out.println("You are Varsha");
+else
+throw new Customexception();
+}
+catch(Exception e)
+{
+System.out.println();
+}
+}
+}
+
+
+
+********************************Marks and subject************************************
+
+import java.util.*;
+class Customexception extends Exception
+{
+Customexception()
+{
+System.out.println("There is an error");
+}
+}
+public class demo3
+{
+public static void main(String[] se)
+{
+Scanner b=new Scanner(System.in);
+System.out.println("Enter the marks");
+String a=b.next();
+System.out.println("Enter the subject name");
+String d=b.next();
+
+System.out.println("Enter the marks");
+String x=b.next();
+System.out.println("Enter the subject name");
+String y=b.next();
+try
+{
+if((a.equals ("40") && d.equals ("java")) && (x.equals ("50") && y.equals ("bd")))
+System.out.println("RIGHT!");
+else
+throw new Customexception();
+
+}
+catch(Exception e)
+{
+System.out.println();
+}
+}
+}
